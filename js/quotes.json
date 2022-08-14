@@ -1,0 +1,58 @@
+[
+     {
+        "enText": "You know, Hobbes, some days even my lucky rocketship underpants don't help",
+        "enAuthor": "Bill Watterson",
+        "ruText": "Знаешь, Хоббс, иногда даже мои счастливые трусы-ракетчики не помогают.",
+        "ruAuthor": "Билл Уоттерсон"
+    },
+
+    {
+        "enText": "The first draft is just you telling yourself the story.",
+        "enAuthor": "Terry Pratchett",
+        "ruText": "В первом черновике вы просто рассказываете себе историю.",
+        "ruAuthor": "Терри Пратчетт"
+    },
+
+    {
+        "enText": "If you don't have time to read, you don't have the time (or the tools) to write. Simple as that.",
+        "enAuthor": "Stephen King",
+        "ruText": "Если у вас нет времени читать, у вас нет времени (или инструментов) писать. Просто как тот.",
+        "ruAuthor" : "Стивен Кинг"
+    },
+
+    {
+        "enText": "First, solve the problem. Then, write the code.",
+        "enAuthor": "John Johnson",
+        "ruText": "Во-первых, решить проблему. Затем напишите код." ,
+        "ruAuthor": "Джон Джонсон"
+    },
+
+
+    {
+        "enText": "Experience is the name everyone gives to their mistakes.",
+        "enAuthor": "Oscar Wilde",
+        "ruText": "Опыт — это имя, которое каждый дает своим ошибкам." ,
+        "ruAuthor": "Оскар Уальд"
+    },
+
+    {
+        "enText": "Knowledge is power.",
+        "enAuthor": "Francis Bacon",
+        "ruText": "Знания-сила" ,
+        "ruAuthor": "Френсис Бэкон"
+    },
+
+    {
+        "enText": "Simplicity is the soul of efficiency.",
+        "enAuthor": "Austin Freeman",
+        "ruText": "Простота — это душа эффективности." ,
+        "ruAuthor": "Остин Фриман"
+    },
+
+    {
+        "enText": "Make it work, make it right, make it fast.",
+        "enAuthor": "Kent Beck",
+        "ruText": "Заставьте это работать, сделайте это правильно, сделайте это быстро." ,
+        "ruAuthor": "Кент Бек"
+    }
+]

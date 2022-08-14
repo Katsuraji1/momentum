@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <div class="audio-player">
+        <div class="timeline">
+          <div class="progress"></div>
+        </div>
+        <div class="music-name"><span>Моя музыка</span></div>
+        <div class="Time">
+        <span class="startTime">0:00</span>
+        <span class="slesh">/</span>
+        <span class="endTime">00:39</span>
+      </div>
+      <input type = 'range' class="volume-progress" min = 0 max =100 step="1" value="100"> </input>
+      <div class="volume-button"></div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" placeholder="[Введите город]"  value="Minsk"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+        <span class="humidity"></span>
+        <span class="windSpeed"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="[Введите имя]">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="settings"></div>
+        <div class="setting-menu">
+          <div class="close"></div>
+          <div class="sources">
+            <ul  class="settings-list">
+              <li class="settingLang">Язык</li>
+              <li class="settingSource">Источник фото</li>
+              <li class="tagApi">Тег для API</li>
+              <li class="settingTime">Время</li>
+              <li class="settingDate">Дата</li>
+              <li class="settingGreeting">Приветствие</li>
+              <li class="settingQuotes">Цитата дня</li>
+              <li class="settingWeather">Прогноз погоды</li>
+              <li class="settingAudioplayer">Аудиоплеер</li>
+              <li class="settingToDoList">Список дел</li>
+            </ul>
+            <ul class="button-list">
+              <li><select class="leng" name="" >
+                <option value="ru">ru</option>
+                <option value="en">en</option>
+              </select></li>
+              <li class="typeApiLi"><select class="typeApi" name="" >
+                <option value="Git">GitHub</option>
+                <option value="Unsplash">Unsplash API</option>
+                <option value="Flickr">Flickr API</option>
+              </select></li>
+              <li class="typeApiText"><input class="tegText" type="text"></li>
+              <li><input class="timeBtn" type="button" value="enable"></li>
+              <li><input class="dataBtn" type="button" value="enable"></li>
+              <li><input class="greetingBtn" type="button" value="enable"></li>
+              <li><input class="qoutesBtn" type="button" value="enable"></li>
+              <li><input class="weatherBtn" type="button" value="enable"></li>
+              <li><input class="audioBtn" type="button" value="enable"></li>
+              <li><input  class = 'toDoBtn'type="button" value="enable"></li>
+            </ul>
+          </div>
+      </div>
+    <div class="quoteAndAuthor">
+      <button class="change-quote"></button>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="toDoMenu">
+    <div class="toDoIcon"></div>
+    <div class="toDoList">
+      <div class="addLi">
+        <form id="new-todo-form">
+        <input class="inputToDoText" type="text" name = 'content'>
+        <input type="submit" class="addButton" value="+"></input>
+      </form>
+      </div>
+      <div class="ulToDo">
+         <!-- <div class="lis">
+          <div class="li">
+            <input class = 'liContent' type="text" readonly>
+          </div>
+          <div class="actions">
+            <button class="addButton1">-</button>
+            <button button class="editToDo">EDIT</button>
+          </div>
+        </div> -->
+        </div>
+    </div>
+  </div>
+  </footer> 
+  <script src="js/setting.js"></script>
+  <script src="js/TimeDateGreeting.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/localestorage.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src = "js/toDoList.js"></script>
+
+  <script type="module" src="js/audio.js"></script>
+</body>
+</html>
