@@ -5,11 +5,11 @@
 
 openToDoList.addEventListener('click',()=>{
      if(isOpenToDoList == false){
-         toDoList.classList.add('setting-menu-open') 
+         toDoList.classList.add('setting-menu-open1') 
          isOpenToDoList = true  
     }
     else if (isOpenToDoList == true){
-        toDoList.classList.remove('setting-menu-open')   
+        toDoList.classList.remove('setting-menu-open1')   
         isOpenToDoList = false 
     }
  })

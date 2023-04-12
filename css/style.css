@@ -393,11 +393,11 @@ body {
   position: absolute;
   width: 320px;
   height: 300px;
-  left: 5%;
-  bottom: 4%;
+  bottom: 40px;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  transition: 1s;
+  transition: 2s;
+  left: -320px;
 }
 
 
@@ -448,6 +448,7 @@ body {
 .quoteAndAuthor{
   transition: 1s;
   z-index: 1;
+  width: 700px;
 }
 
 .button-list li {
@@ -458,6 +459,7 @@ body {
 .player {
   opacity: 1;
   transition: 1s;
+  z-index: 1;
 }
 
 
@@ -500,7 +502,7 @@ body {
 }
 
 .toDoList {
-  right: 40px;
+  right: 0px;
   bottom: 40px;
   position: absolute;
   width: 420px;
@@ -510,7 +512,7 @@ body {
   opacity: 0;
   transition: 1s;
   overflow-y: scroll;
-  z-index: 0;
+  z-index: -1;
 }
 
 .addLi{
@@ -597,6 +599,7 @@ color:#fff
 .setting-menu-open{
   opacity: 1;
   z-index: 2;
+  left: 0px;
 }
 
 .button-list li {
@@ -605,4 +608,31 @@ color:#fff
 
 .tegText{
   width: 100%;
+}
+
+.def{
+  display: none;
+}
+
+.setting-menu-open1{
+  opacity: 1;
+  z-index: 2;
+  right: 40px;
+}
+
+.rsschool_icon{
+  width: 85px;
+  height: 50px;
+  background-image: url('../assets/svg/rs_school_js.svg');
+  background-size: 100% 100%;
+  cursor: pointer;
+
+}
+
+.github_icon{
+  width: 65px;
+  height: 65px;
+  background-image: url('../assets/svg/icons8-github.svg');
+  background-size: 100% 100%;
+  cursor: pointer;
 }

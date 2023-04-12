@@ -10,7 +10,7 @@ const greetingTranslation = [
     },
 
     {
-        en: 'Good evning',
+        en: 'Good evening',
         ru: 'Добрый вечер'
     },
 
@@ -113,3 +113,5 @@ function showGreetingEn () {
     const greetingTr = greetingTranslation[day].en
     Greet.textContent=greetingTr;
 } 
+
+console.log('1)+15 2)+10 3)+20 4)+15 5)+10 6)+15 7)+20 8)+15 9)+10 10)+20 11)+10');

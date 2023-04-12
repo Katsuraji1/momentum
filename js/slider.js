@@ -19,7 +19,15 @@ function setBg() {
     body.style.backgroundImage = `url(https://raw.githubusercontent.com/Katsuraji1/stage1-tasks/assets/images/${timeOfDay}/${bgNum}.jpg)`
 }
 }
-setBg()
+
+
+if (localStorage.getItem('typeApi')==null){
+    setBg()
+}
+else if (localStorage.getItem('typeApi')=='defaul'){
+    setBg()
+}
+
 
 const slideNext = document.querySelector('.slide-next')
 const slidePrev = document.querySelector('.slide-prev')
@@ -33,6 +41,7 @@ async function getLinkToImage (){
    img.src = data.urls.regular
    img.onload =()=>{
    body.style.backgroundImage= `url("${img.src}")`
+
    }
 }
 
@@ -44,6 +53,7 @@ async function getLinkToImage1 (){
    img.src = data.urls.regular
    img.onload =()=>{
    body.style.backgroundImage= `url("${img.src}")`
+
    }
 }
 
@@ -56,6 +66,7 @@ async function getLinkToImageFliker () {
      img.onload = ()=>{
          body.style.backgroundImage =`url("${img.src}")`
     }
+
  }
 
  async function getLinkToImageFliker1 () {
@@ -67,11 +78,15 @@ async function getLinkToImageFliker () {
      img.onload = ()=>{
          body.style.backgroundImage =`url("${img.src}")`
     }
+
  }
 typeApi.addEventListener('change', chooseApi)
 
     function chooseApi(){
-    if (typeApi.value == 'Git'){
+        if (!typeApi.value){
+            setBg()  
+        }
+    else if (typeApi.value == 'Git'){
         setBg()
     }
 
@@ -105,7 +120,7 @@ tegText.addEventListener('change',tagForApi)
 
     
     slideNext.addEventListener('click', ()=> {
-        if(typeApi.value == 'Git' || tagApi.value == undefined){
+        if(typeApi.value == 'Git' || tagApi.value == undefined || typeApi.value =='defaul' || localStorage.getItem('typeApi')==null || localStorage.getItem('typeApi')=='defaul'){
         randomNum++;
         if (randomNum>20) randomNum=1;
         setBg();
@@ -125,7 +140,7 @@ tegText.addEventListener('change',tagForApi)
     })
     
     slidePrev.addEventListener('click', ()=> {
-        if(typeApi.value == 'Git' || tagApi.value == undefined){
+        if(typeApi.value == 'Git' || tagApi.value == undefined || typeApi.value=='defaul' || localStorage.getItem('typeApi')==null || localStorage.getItem('typeApi')=='defaul'){
         if(randomNum<=1) randomNum=21;
         randomNum--;
         setBg();

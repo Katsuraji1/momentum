@@ -4,8 +4,8 @@ function setLocaleStorage () {
 localStorage.setItem ('name', name.value)
 localStorage.setItem('city',city.value)
 localStorage.setItem('leng',leng.value)
-localStorage.setItem('typeApi',typeApi.value)
 localStorage.setItem('tegText',tegText.value)
+localStorage.setItem('typeApi',typeApi.value)
 localStorage.setItem('audioBtn',audioButton.value)
 localStorage.setItem('timeBtn',timeButton.value)
 localStorage.setItem('dateBtn',dateButton.value)
@@ -34,12 +34,7 @@ function getLocaleStorage () {
     }
     if (localStorage.getItem('typeApi')){
         typeApi.value = localStorage.getItem('typeApi')
-        if (tegText.value == 0){
-            chooseApi()
-        }
-        else if (tegText.value !== 0){
             tagForApi()
-        }
     }
     if (localStorage.getItem('audioBtn')){
         audioButton.value = localStorage.getItem('audioBtn')

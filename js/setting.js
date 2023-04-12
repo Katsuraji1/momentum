@@ -31,6 +31,7 @@ const namePlaceholder = document.querySelector('.name')
 const quoteDiv = document.querySelector('.quoteAndAuthor')
 const toDoBtn = document.querySelector('.toDoBtn')
 const toDoMenu = document.querySelector('.toDoMenu')
+const weatherDefault = document.querySelector('.city')
 
 let isOpen = false
 
